@@ -1,0 +1,1529 @@
+DEBUG - 2025-06-24 07:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 07:05:33 --> mysqli_sql_exception: Table 'quiz.login_logs' doesn't exist in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 07:05:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.login_logs' doesn't exist
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:05:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.login_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:33\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:33\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:05:33 --> [Caused by] mysqli_sql_exception: Table 'quiz.login_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 07:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 07:05:41 --> mysqli_sql_exception: Table 'quiz.login_logs' doesn't exist in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 07:05:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.login_logs' doesn't exist
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:05:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.login_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:41\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:41\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:05:41 --> [Caused by] mysqli_sql_exception: Table 'quiz.login_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 07:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 07:05:43 --> mysqli_sql_exception: Table 'quiz.login_logs' doesn't exist in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 07:05:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.login_logs' doesn't exist
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:05:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.login_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:43\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:43\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:05:43 --> [Caused by] mysqli_sql_exception: Table 'quiz.login_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:43\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:43\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36\', \'Desktop\', \'Windows 10\', \'2025-06-24 07:05:43\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 07:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 07:05:49 --> mysqli_sql_exception: Table 'quiz.login_logs' doesn't exist in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `lo...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `lo...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `lo...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `lo...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 07:05:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.login_logs' doesn't exist
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:05:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.login_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36\', \'Android\', \'Android\', \'2025-06-24 07:05:49\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36\', \'Android\', \'Android\', \'2025-06-24 07:05:49\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:05:49 --> [Caused by] mysqli_sql_exception: Table 'quiz.login_logs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36\', \'Android\', \'Android\', \'2025-06-24 07:05:49\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36\', \'Android\', \'Android\', \'2025-06-24 07:05:49\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (\'2\', \'::1\', \'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36\', \'Android\', \'Android\', \'2025-06-24 07:05:49\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `login_logs` (`staff_id`, `ip_address`, `user_agent`, `device_type`, `platform`, `login_time`) VALUES (:staff_id:, :ip_address:, :user_agent:, :device_type:, :platform:, :login_time:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Auth.php(44): App\Models\HomeModel->store('login_logs', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 07:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 07:07:54 --> mysqli_sql_exception: Table 'quiz.tbl_library_users' doesn't exist in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\lib\app\Models\HomeModel.php(313): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\lib\app\Controllers\Home.php(148): App\Models\HomeModel->getLastRegisteredUsers()
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->body()
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-24 07:07:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.tbl_library_users' doesn't exist
+[Method: GET, Route: body]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\HomeModel.php(313): CodeIgniter\Database\BaseConnection->query('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 2 APPPATH\Controllers\Home.php(148): App\Models\HomeModel->getLastRegisteredUsers()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->body()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:07:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.tbl_library_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 3 APPPATH\Models\HomeModel.php(313): CodeIgniter\Database\BaseConnection->query('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 4 APPPATH\Controllers\Home.php(148): App\Models\HomeModel->getLastRegisteredUsers()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->body()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:07:54 --> [Caused by] mysqli_sql_exception: Table 'quiz.tbl_library_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 4 APPPATH\Models\HomeModel.php(313): CodeIgniter\Database\BaseConnection->query('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 5 APPPATH\Controllers\Home.php(148): App\Models\HomeModel->getLastRegisteredUsers()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->body()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 07:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 07:09:24 --> mysqli_sql_exception: Table 'quiz.tbl_library_users' doesn't exist in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\lib\app\Models\HomeModel.php(313): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...')
+#4 C:\xampp\htdocs\lib\app\Controllers\Home.php(148): App\Models\HomeModel->getLastRegisteredUsers()
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->body()
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-24 07:09:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.tbl_library_users' doesn't exist
+[Method: GET, Route: body]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\HomeModel.php(313): CodeIgniter\Database\BaseConnection->query('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 2 APPPATH\Controllers\Home.php(148): App\Models\HomeModel->getLastRegisteredUsers()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->body()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:09:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.tbl_library_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 3 APPPATH\Models\HomeModel.php(313): CodeIgniter\Database\BaseConnection->query('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 4 APPPATH\Controllers\Home.php(148): App\Models\HomeModel->getLastRegisteredUsers()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->body()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 07:09:24 --> [Caused by] mysqli_sql_exception: Table 'quiz.tbl_library_users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 4 APPPATH\Models\HomeModel.php(313): CodeIgniter\Database\BaseConnection->query('
+        SELECT username, email, gender, phone_number, image, status,register_date
+        FROM tbl_library_users
+        ORDER BY lib_user_id DESC
+        LIMIT 5
+    ')
+ 5 APPPATH\Controllers\Home.php(148): App\Models\HomeModel->getLastRegisteredUsers()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->body()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 07:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:19:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:19:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:22:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 07:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 08:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 08:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 08:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 08:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 08:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 09:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 09:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 09:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 09:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 09:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 09:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 09:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:56:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 12:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:14:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:23:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 13:28:59 --> mysqli_sql_exception: Unknown column 'correct_answer' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `qu...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qu...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qu...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 13:28:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correct_answer' in 'field list'
+[Method: POST, Route: save_questions]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 2 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:28:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'dssd\', \'12\', \'true_false\', \'False\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'dssd\', \'12\', \'true_false\', \'False\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 4 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:28:59 --> [Caused by] mysqli_sql_exception: Unknown column 'correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'dssd\', \'12\', \'true_false\', \'False\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'dssd\', \'12\', \'true_false\', \'False\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'dssd\', \'12\', \'true_false\', \'False\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 5 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 13:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 13:29:19 --> mysqli_sql_exception: Unknown column 'correct_answer' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `qu...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qu...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qu...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 13:29:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correct_answer' in 'field list'
+[Method: POST, Route: save_questions]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 2 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:29:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 4 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:29:19 --> [Caused by] mysqli_sql_exception: Unknown column 'correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 5 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 13:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 13:29:30 --> mysqli_sql_exception: Unknown column 'correct_answer' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `qu...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qu...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qu...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 13:29:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correct_answer' in 'field list'
+[Method: POST, Route: save_questions]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 2 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:29:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 4 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:29:30 --> [Caused by] mysqli_sql_exception: Unknown column 'correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 5 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 13:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 13:30:12 --> mysqli_sql_exception: Unknown column 'correct_answer' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `qu...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qu...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qu...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 13:30:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correct_answer' in 'field list'
+[Method: POST, Route: save_questions]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 2 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:30:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'True\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'True\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 4 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:30:12 --> [Caused by] mysqli_sql_exception: Unknown column 'correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'True\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'True\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'True\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `correct_answer`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :correct_answer:)', [...], false)
+ 5 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 13:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 13:31:22 --> mysqli_sql_exception: Unknown column 'is_correct' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `qu...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qu...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qu...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qu...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-24 13:31:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'is_correct' in 'field list'
+[Method: POST, Route: save_questions]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `is_correct`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :is_correct:)', [...], false)
+ 2 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:31:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'is_correct' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `is_correct`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `is_correct`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `is_correct`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :is_correct:)', [...], false)
+ 4 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 13:31:22 --> [Caused by] mysqli_sql_exception: Unknown column 'is_correct' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `is_correct`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `is_correct`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `is_correct`) VALUES (\'1\', \'daadada\', \'12\', \'true_false\', \'False\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `quiz_questions` (`quiz_id`, `question_text`, `marks`, `q_type`, `is_correct`) VALUES (:quiz_id:, :question_text:, :marks:, :q_type:, :is_correct:)', [...], false)
+ 5 APPPATH\Models\QuizModel.php(11): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\quizcontroller.php(328): App\Models\QuizModel->store('quiz_questions', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->save_questions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 13:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 13:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 18:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 18:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 18:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 18:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-24 18:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-24 19:07:23 --> mysqli_sql_exception: Unknown column 'ques.correct_answer' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT q.quiz_i...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT q.quiz_i...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT q.quiz_i...')
+#3 C:\xampp\htdocs\lib\app\Models\QuizModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT q.quiz_i...', Array)
+#4 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizWithQuestions('1')
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-24 19:07:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ques.correct_answer' in 'field list'
+[Method: GET, Route: Exams/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\QuizModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT q.quiz_id, q.name AS quiz_name, 
+                   ques.quiz_question_id, ques.question_text, ques.q_type, ques.marks, ques.correct_answer,
+                   GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+            FROM tbl_quiz q
+            JOIN quiz_questions ques ON q.quiz_id = ques.quiz_id
+            LEFT JOIN choices c ON ques.quiz_question_id = c.question_id
+            WHERE q.quiz_id = ?
+            GROUP BY ques.quiz_question_id', [...])
+ 2 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizWithQuestions('1')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:07:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ques.correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT q.quiz_id, q.name AS quiz_name, 
+                   ques.quiz_question_id, ques.question_text, ques.q_type, ques.marks, ques.correct_answer,
+                   GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+            FROM tbl_quiz q
+            JOIN quiz_questions ques ON q.quiz_id = ques.quiz_id
+            LEFT JOIN choices c ON ques.quiz_question_id = c.question_id
+            WHERE q.quiz_id = \'1\'
+            GROUP BY ques.quiz_question_id')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT q.quiz_id, q.name AS quiz_name, 
+                   ques.quiz_question_id, ques.question_text, ques.q_type, ques.marks, ques.correct_answer,
+                   GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+            FROM tbl_quiz q
+            JOIN quiz_questions ques ON q.quiz_id = ques.quiz_id
+            LEFT JOIN choices c ON ques.quiz_question_id = c.question_id
+            WHERE q.quiz_id = \'1\'
+            GROUP BY ques.quiz_question_id')
+ 3 APPPATH\Models\QuizModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT q.quiz_id, q.name AS quiz_name, 
+                   ques.quiz_question_id, ques.question_text, ques.q_type, ques.marks, ques.correct_answer,
+                   GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+            FROM tbl_quiz q
+            JOIN quiz_questions ques ON q.quiz_id = ques.quiz_id
+            LEFT JOIN choices c ON ques.quiz_question_id = c.question_id
+            WHERE q.quiz_id = ?
+            GROUP BY ques.quiz_question_id', [...])
+ 4 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizWithQuestions('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:07:23 --> [Caused by] mysqli_sql_exception: Unknown column 'ques.correct_answer' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT q.quiz_id, q.name AS quiz_name, 
+                   ques.quiz_question_id, ques.question_text, ques.q_type, ques.marks, ques.correct_answer,
+                   GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+            FROM tbl_quiz q
+            JOIN quiz_questions ques ON q.quiz_id = ques.quiz_id
+            LEFT JOIN choices c ON ques.quiz_question_id = c.question_id
+            WHERE q.quiz_id = \'1\'
+            GROUP BY ques.quiz_question_id', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT q.quiz_id, q.name AS quiz_name, 
+                   ques.quiz_question_id, ques.question_text, ques.q_type, ques.marks, ques.correct_answer,
+                   GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+            FROM tbl_quiz q
+            JOIN quiz_questions ques ON q.quiz_id = ques.quiz_id
+            LEFT JOIN choices c ON ques.quiz_question_id = c.question_id
+            WHERE q.quiz_id = \'1\'
+            GROUP BY ques.quiz_question_id')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT q.quiz_id, q.name AS quiz_name, 
+                   ques.quiz_question_id, ques.question_text, ques.q_type, ques.marks, ques.correct_answer,
+                   GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+            FROM tbl_quiz q
+            JOIN quiz_questions ques ON q.quiz_id = ques.quiz_id
+            LEFT JOIN choices c ON ques.quiz_question_id = c.question_id
+            WHERE q.quiz_id = \'1\'
+            GROUP BY ques.quiz_question_id')
+ 4 APPPATH\Models\QuizModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT q.quiz_id, q.name AS quiz_name, 
+                   ques.quiz_question_id, ques.question_text, ques.q_type, ques.marks, ques.correct_answer,
+                   GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+            FROM tbl_quiz q
+            JOIN quiz_questions ques ON q.quiz_id = ques.quiz_id
+            LEFT JOIN choices c ON ques.quiz_question_id = c.question_id
+            WHERE q.quiz_id = ?
+            GROUP BY ques.quiz_question_id', [...])
+ 5 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizWithQuestions('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:18:17 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: Exams/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\quizcontroller.php(22): CodeIgniter\Model->__call('getQuizWithQuestions', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:25:03 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: Exams/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\quizcontroller.php(22): CodeIgniter\Model->__call('getQuizWithQuestions', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:26:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "quiz/view_quiz.php"
+[Method: GET, Route: Exams/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('quiz/view_quiz.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/view_quiz', [], true)
+ 3 APPPATH\Controllers\quizcontroller.php(28): view('quiz/view_quiz', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:27:02 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 5.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 4 APPPATH\Controllers\quizcontroller.php(28): view('quiz/Exam', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:28:56 --> ErrorException: Undefined property: stdClass::$quiz_name
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 5.
+ 1 APPPATH\Views\quiz\Exam.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$quiz_name', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(28): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:28:58 --> ErrorException: Undefined property: stdClass::$quiz_name
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 5.
+ 1 APPPATH\Views\quiz\Exam.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$quiz_name', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(28): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:30:20 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: GET, Route: Exams/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\quizcontroller.php(22): CodeIgniter\Model->__call('getQuizQuestionsWithChoices', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-24 19:30:52 --> mysqli_sql_exception: Unknown column 'q.quiz_name' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\lib\app\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-24 19:30:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'q.quiz_name' in 'field list'
+[Method: GET, Route: Exams/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.question_text,
+            q.quiz_name,      
+
+            qq.q_type,
+            qq.marks,
+            c.choice_id,
+            c.choice_text,
+            c.is_correct
+        FROM quiz_questions qq
+        JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        ORDER BY qq.quiz_question_id, c.choice_id
+    ', [...])
+ 2 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:30:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'q.quiz_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            qq.quiz_question_id,
+            qq.question_text,
+            q.quiz_name,      
+
+            qq.q_type,
+            qq.marks,
+            c.choice_id,
+            c.choice_text,
+            c.is_correct
+        FROM quiz_questions qq
+        JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        ORDER BY qq.quiz_question_id, c.choice_id
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            qq.quiz_question_id,
+            qq.question_text,
+            q.quiz_name,      
+
+            qq.q_type,
+            qq.marks,
+            c.choice_id,
+            c.choice_text,
+            c.is_correct
+        FROM quiz_questions qq
+        JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        ORDER BY qq.quiz_question_id, c.choice_id
+    ')
+ 3 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.question_text,
+            q.quiz_name,      
+
+            qq.q_type,
+            qq.marks,
+            c.choice_id,
+            c.choice_text,
+            c.is_correct
+        FROM quiz_questions qq
+        JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        ORDER BY qq.quiz_question_id, c.choice_id
+    ', [...])
+ 4 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:30:52 --> [Caused by] mysqli_sql_exception: Unknown column 'q.quiz_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.question_text,
+            q.quiz_name,      
+
+            qq.q_type,
+            qq.marks,
+            c.choice_id,
+            c.choice_text,
+            c.is_correct
+        FROM quiz_questions qq
+        JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        ORDER BY qq.quiz_question_id, c.choice_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            qq.quiz_question_id,
+            qq.question_text,
+            q.quiz_name,      
+
+            qq.q_type,
+            qq.marks,
+            c.choice_id,
+            c.choice_text,
+            c.is_correct
+        FROM quiz_questions qq
+        JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        ORDER BY qq.quiz_question_id, c.choice_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            qq.quiz_question_id,
+            qq.question_text,
+            q.quiz_name,      
+
+            qq.q_type,
+            qq.marks,
+            c.choice_id,
+            c.choice_text,
+            c.is_correct
+        FROM quiz_questions qq
+        JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        ORDER BY qq.quiz_question_id, c.choice_id
+    ')
+ 4 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.question_text,
+            q.quiz_name,      
+
+            qq.q_type,
+            qq.marks,
+            c.choice_id,
+            c.choice_text,
+            c.is_correct
+        FROM quiz_questions qq
+        JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        ORDER BY qq.quiz_question_id, c.choice_id
+    ', [...])
+ 5 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-24 19:32:59 --> mysqli_sql_exception: Table 'quiz.quizzes' doesn't exist in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\lib\app\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-24 19:32:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.quizzes' doesn't exist
+[Method: GET, Route: Exams/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN quizzes q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ', [...])
+ 2 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:32:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'quiz.quizzes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN quizzes q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN quizzes q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ')
+ 3 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN quizzes q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ', [...])
+ 4 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:32:59 --> [Caused by] mysqli_sql_exception: Table 'quiz.quizzes' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN quizzes q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN quizzes q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN quizzes q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ')
+ 4 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN quizzes q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ', [...])
+ 5 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-24 19:33:33 --> mysqli_sql_exception: Unknown column 'q.quiz_name' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('\r\n        SELEC...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('\r\n        SELEC...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('\r\n        SELEC...')
+#3 C:\xampp\htdocs\lib\app\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('\r\n        SELEC...', Array)
+#4 C:\xampp\htdocs\lib\app\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-24 19:33:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'q.quiz_name' in 'field list'
+[Method: GET, Route: Exams/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN tbl_quiz q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ', [...])
+ 2 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:33:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'q.quiz_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN tbl_quiz q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN tbl_quiz q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ')
+ 3 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN tbl_quiz q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ', [...])
+ 4 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:33:33 --> [Caused by] mysqli_sql_exception: Unknown column 'q.quiz_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN tbl_quiz q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN tbl_quiz q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN tbl_quiz q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = \'1\'
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ')
+ 4 APPPATH\Models\QuizModel.php(65): CodeIgniter\Database\BaseConnection->query('
+        SELECT 
+            qq.quiz_question_id,
+            qq.quiz_id,
+            q.quiz_name,
+            qq.question_text,
+            qq.q_type,
+            qq.marks,
+            GROUP_CONCAT(c.choice_text ORDER BY c.choice_id SEPARATOR \'|||\') AS choices
+        FROM quiz_questions qq
+        JOIN tbl_quiz q ON q.quiz_id = qq.quiz_id
+        LEFT JOIN choices c ON c.quiz_question_id = qq.quiz_question_id
+        WHERE qq.quiz_id = ?
+        GROUP BY qq.quiz_question_id
+        ORDER BY qq.quiz_question_id
+    ', [...])
+ 5 APPPATH\Controllers\quizcontroller.php(22): App\Models\QuizModel->getQuizQuestionsWithChoices('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-24 19:34:40 --> ErrorException: Undefined property: stdClass::$quiz_name
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 5.
+ 1 APPPATH\Views\quiz\Exam.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$quiz_name', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 5)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(28): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-24 19:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

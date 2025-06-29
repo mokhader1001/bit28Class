@@ -1,0 +1,1039 @@
+ERROR - 2025-04-30 08:32:19 --> mysqli_sql_exception: Unknown column 'description' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT author_i...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT author_i...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT author_i...')
+#3 C:\xampp\htdocs\lib\app\Models\HomeModel.php(21): CodeIgniter\Database\BaseConnection->query('SELECT author_i...')
+#4 C:\xampp\htdocs\lib\app\Controllers\Home.php(46): App\Models\HomeModel->getAuthors()
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->fetch_Authors()
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-04-30 08:32:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'description' in 'field list'
+[Method: GET, Route: authors/fetch_Authors]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\HomeModel.php(21): CodeIgniter\Database\BaseConnection->query('SELECT author_id, name, description FROM authors')
+ 2 APPPATH\Controllers\Home.php(46): App\Models\HomeModel->getAuthors()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->fetch_Authors()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 08:32:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'description' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT author_id, name, description FROM authors')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT author_id, name, description FROM authors')
+ 3 APPPATH\Models\HomeModel.php(21): CodeIgniter\Database\BaseConnection->query('SELECT author_id, name, description FROM authors')
+ 4 APPPATH\Controllers\Home.php(46): App\Models\HomeModel->getAuthors()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->fetch_Authors()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 08:32:19 --> [Caused by] mysqli_sql_exception: Unknown column 'description' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT author_id, name, description FROM authors', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT author_id, name, description FROM authors')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT author_id, name, description FROM authors')
+ 4 APPPATH\Models\HomeModel.php(21): CodeIgniter\Database\BaseConnection->query('SELECT author_id, name, description FROM authors')
+ 5 APPPATH\Controllers\Home.php(46): App\Models\HomeModel->getAuthors()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->fetch_Authors()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 08:33:04 --> ErrorException: Undefined array key "description"
+[Method: GET, Route: authors/fetch_Authors]
+in APPPATH\Controllers\Home.php on line 70.
+ 1 APPPATH\Controllers\Home.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'C:\\xampp\\htdocs\\lib\\app\\Controllers\\Home.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->fetch_Authors()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:12:05 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: authors/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(52): CodeIgniter\Model->__call('update_tbl', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:12:43 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: authors/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(52): CodeIgniter\Model->__call('update_tbl', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:14:06 --> ErrorException: Array to string conversion
+[Method: POST, Route: authors/save]
+in APPPATH\Models\HomeModel.php on line 28.
+ 1 APPPATH\Models\HomeModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\lib\\app\\Models\\HomeModel.php', 28)
+ 2 APPPATH\Controllers\Home.php(52): App\Models\HomeModel->update_tbl('authors', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:17:34 --> TypeError: CodeIgniter\Database\BaseConnection::getFieldData(): Argument #1 ($table) must be of type string, array given, called in C:\xampp\htdocs\lib\app\Models\HomeModel.php on line 31
+[Method: POST, Route: authors/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 1642.
+ 1 APPPATH\Models\HomeModel.php(31): CodeIgniter\Database\BaseConnection->getFieldData([...])
+ 2 APPPATH\Controllers\Home.php(52): App\Models\HomeModel->update_tbl('authors', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:18:05 --> TypeError: CodeIgniter\Database\BaseConnection::getFieldData(): Argument #1 ($table) must be of type string, array given, called in C:\xampp\htdocs\lib\app\Models\HomeModel.php on line 31
+[Method: POST, Route: authors/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 1642.
+ 1 APPPATH\Models\HomeModel.php(31): CodeIgniter\Database\BaseConnection->getFieldData([...])
+ 2 APPPATH\Controllers\Home.php(52): App\Models\HomeModel->update_tbl('authors', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:18:21 --> TypeError: CodeIgniter\Database\BaseConnection::getFieldData(): Argument #1 ($table) must be of type string, array given, called in C:\xampp\htdocs\lib\app\Models\HomeModel.php on line 31
+[Method: POST, Route: authors/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 1642.
+ 1 APPPATH\Models\HomeModel.php(31): CodeIgniter\Database\BaseConnection->getFieldData([...])
+ 2 APPPATH\Controllers\Home.php(52): App\Models\HomeModel->update_tbl('authors', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:26:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You must specify a constraint to match on for batch updates.
+[Method: POST, Route: authors/save]
+in SYSTEMPATH\Database\MySQLi\Builder.php on line 74.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1832): CodeIgniter\Database\MySQLi\Builder->_updateBatch('`authors`', [...], [...])
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2616): CodeIgniter\Database\BaseBuilder->batchExecute('_updateBatch', 100)
+ 3 APPPATH\Models\HomeModel.php(28): CodeIgniter\Database\BaseBuilder->updateBatch([...])
+ 4 APPPATH\Controllers\Home.php(52): App\Models\HomeModel->update_auth([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 09:33:20 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+[Method: POST, Route: authors/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 941.
+ 1 SYSTEMPATH\Model.php(714): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(920): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(32): CodeIgniter\Model->__call('delete_data', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 10:04:29 --> ErrorException: Undefined variable $title
+[Method: GET, Route: Authors]
+in APPPATH\Views\books\Authors.php on line 12.
+ 1 APPPATH\Views\books\Authors.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\lib\\app\\Views\\books\\Authors.php', 12)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\books\\Authors.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('books/Authors', [], true)
+ 5 APPPATH\Controllers\Home.php(19): view('books/Authors')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Authors()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-30 11:12:50 --> mysqli_sql_exception: Column 'Name' cannot be null in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(68): App\Models\HomeModel->store('authors', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->author_form()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 11:12:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:12:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:12:50 --> [Caused by] mysqli_sql_exception: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-30 11:12:57 --> mysqli_sql_exception: Column 'Name' cannot be null in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(68): App\Models\HomeModel->store('authors', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->author_form()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 11:12:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:12:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:12:57 --> [Caused by] mysqli_sql_exception: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-30 11:17:04 --> mysqli_sql_exception: Column 'Name' cannot be null in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(68): App\Models\HomeModel->store('authors', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->author_form()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 11:17:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:17:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:17:04 --> [Caused by] mysqli_sql_exception: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-30 11:17:28 --> mysqli_sql_exception: Column 'Name' cannot be null in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(68): App\Models\HomeModel->store('authors', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->author_form()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 11:17:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:17:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:17:28 --> [Caused by] mysqli_sql_exception: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-30 11:20:46 --> mysqli_sql_exception: Column 'Name' cannot be null in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(68): App\Models\HomeModel->store('authors', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->author_form()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 11:20:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+[Method: POST, Route: auth/login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:20:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:20:46 --> [Caused by] mysqli_sql_exception: Column 'Name' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `authors` (`name`, `descriptions`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `authors` (`name`, `descriptions`) VALUES (:name:, :descriptions:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(68): App\Models\HomeModel->store('authors', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->author_form()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:22:54 --> Error: Class "App\Models\UserModel" not found
+[Method: POST, Route: auth/login]
+in APPPATH\Controllers\Auth.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:23:47 --> Error: Class "App\Models\UserModel" not found
+[Method: POST, Route: auth/login]
+in APPPATH\Controllers\Auth.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 11:25:30 --> Error: Class "App\Models\UserModel" not found
+[Method: POST, Route: auth/login]
+in APPPATH\Controllers\Auth.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->login()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 11:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-04-30 11:50:05 --> CodeIgniter\Filters\Exceptions\FilterException: "authguard" filter must have a matching alias defined.
+[Method: GET, Route: logout]
+in SYSTEMPATH\Filters\Filters.php on line 590.
+ 1 SYSTEMPATH\Filters\Filters.php(590): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('authguard')
+ 2 SYSTEMPATH\Filters\Filters.php(641): CodeIgniter\Filters\Filters->enableFilter('authguard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 11:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 11:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 12:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:34:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`)) in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:34:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:34:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020041_51796c4a7588c8552ac3.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020041_51796c4a7588c8552ac3.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:34:01 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020041_51796c4a7588c8552ac3.html\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020041_51796c4a7588c8552ac3.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020041_51796c4a7588c8552ac3.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:34:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`)) in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:34:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:34:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020064_2f0838701dfa2572a0bd.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020064_2f0838701dfa2572a0bd.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:34:24 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020064_2f0838701dfa2572a0bd.html\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020064_2f0838701dfa2572a0bd.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020064_2f0838701dfa2572a0bd.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:35:17 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`)) in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:35:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:35:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020117_f205240b56159e948fad.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020117_f205240b56159e948fad.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:35:17 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020117_f205240b56159e948fad.html\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020117_f205240b56159e948fad.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020117_f205240b56159e948fad.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:37:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`)) in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:37:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:37:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020235_0f74b9d1291b06b950ba.csv\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020235_0f74b9d1291b06b950ba.csv\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:37:15 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020235_0f74b9d1291b06b950ba.csv\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020235_0f74b9d1291b06b950ba.csv\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020235_0f74b9d1291b06b950ba.csv\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:39:38 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`)) in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:39:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:39:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020378_daf7cf9cf9328bd48b26.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020378_daf7cf9cf9328bd48b26.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:39:38 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020378_daf7cf9cf9328bd48b26.html\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020378_daf7cf9cf9328bd48b26.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020378_daf7cf9cf9328bd48b26.html\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:39:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`)) in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:39:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:39:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020396_e0a9ce364846206ed27c.csv\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020396_e0a9ce364846206ed27c.csv\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:39:56 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`just1`.`tbl_library_users`, CONSTRAINT `tbl_library_users_ibfk_1` FOREIGN KEY (`registered_by`) REFERENCES `tbl_staff` (`staff_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020396_e0a9ce364846206ed27c.csv\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020396_e0a9ce364846206ed27c.csv\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'male\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020396_e0a9ce364846206ed27c.csv\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:48:47 --> mysqli_sql_exception: Duplicate entry '1233111' for key 'card_tag' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:48:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1233111' for key 'card_tag'
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:48:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1233111' for key 'card_tag'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020927_b49d89a42e376e8373c4.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020927_b49d89a42e376e8373c4.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:48:47 --> [Caused by] mysqli_sql_exception: Duplicate entry '1233111' for key 'card_tag'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020927_b49d89a42e376e8373c4.png\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020927_b49d89a42e376e8373c4.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020927_b49d89a42e376e8373c4.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:49:04 --> mysqli_sql_exception: Duplicate entry '1233111' for key 'card_tag' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:49:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1233111' for key 'card_tag'
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:49:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1233111' for key 'card_tag'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020944_cefb8a05a82f7a6647c1.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020944_cefb8a05a82f7a6647c1.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:49:04 --> [Caused by] mysqli_sql_exception: Duplicate entry '1233111' for key 'card_tag'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020944_cefb8a05a82f7a6647c1.png\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020944_cefb8a05a82f7a6647c1.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'ayub@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746020944_cefb8a05a82f7a6647c1.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-04-30 13:53:07 --> mysqli_sql_exception: Duplicate entry '1233111' for key 'card_tag' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_use...', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-30 13:53:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1233111' for key 'card_tag'
+[Method: POST, Route: libraryusers/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:53:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1233111' for key 'card_tag'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746021187_ec5fe6f56c9179609387.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746021187_ec5fe6f56c9179609387.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:53:07 --> [Caused by] mysqli_sql_exception: Duplicate entry '1233111' for key 'card_tag'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746021187_ec5fe6f56c9179609387.png\', \'Active\', \'17\', \'2025-04-30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746021187_ec5fe6f56c9179609387.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (\'omar\', \'mk@gmail.com\', \'233\', \'female\', \'jhcfhgdsdf\', \'2025-04-30\', \'1233111\', \'1746021187_ec5fe6f56c9179609387.png\', \'Active\', \'17\', \'2025-04-30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_library_users` (`username`, `email`, `phone_number`, `gender`, `occupation`, `dob`, `card_tag`, `image`, `status`, `registered_by`, `register_date`) VALUES (:username:, :email:, :phone_number:, :gender:, :occupation:, :dob:, :card_tag:, :image:, :status:, :registered_by:, :register_date:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(150): App\Models\HomeModel->store('tbl_library_users', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->save_lib()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-04-30 13:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 13:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:14:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-04-30 14:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

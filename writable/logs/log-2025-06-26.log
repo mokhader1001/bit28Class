@@ -1,0 +1,213 @@
+CRITICAL - 2025-06-26 10:01:11 --> ErrorException: Undefined variable $choiceIcons
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 711.
+ 1 APPPATH\Views\quiz\Exam.php(711): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $choiceIcons', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 711)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(33): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-26 20:21:59 --> ErrorException: Undefined property: stdClass::$time_limit
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 1146.
+ 1 APPPATH\Views\quiz\Exam.php(1146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$time_limit', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 1146)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(36): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-26 20:28:05 --> ErrorException: Undefined variable $staffId
+[Method: GET, Route: Exams/1]
+in APPPATH\Controllers\quizcontroller.php on line 25.
+ 1 APPPATH\Controllers\quizcontroller.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staffId', 'C:\\xampp\\htdocs\\lib\\app\\Controllers\\quizcontroller.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-26 20:28:44 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 723.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 4 APPPATH\Controllers\quizcontroller.php(38): view('quiz/Exam', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-26 20:30:02 --> ErrorException: Undefined property: stdClass::$time_limit
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 723.
+ 1 APPPATH\Views\quiz\Exam.php(723): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$time_limit', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 723)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(38): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-26 20:30:21 --> ErrorException: Undefined property: stdClass::$time_limit
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 723.
+ 1 APPPATH\Views\quiz\Exam.php(723): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$time_limit', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 723)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(38): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-26 20:30:29 --> ErrorException: Undefined property: stdClass::$time_limit
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 723.
+ 1 APPPATH\Views\quiz\Exam.php(723): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$time_limit', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 723)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(38): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-26 20:32:50 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 1151.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 4 APPPATH\Controllers\quizcontroller.php(38): view('quiz/Exam', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-26 20:34:13 --> ErrorException: Undefined property: stdClass::$time_limit
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 723.
+ 1 APPPATH\Views\quiz\Exam.php(723): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$time_limit', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 723)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(38): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-26 20:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-26 20:42:34 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 1146.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 4 APPPATH\Controllers\quizcontroller.php(40): view('quiz/Exam', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-26 20:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:47:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-26 20:54:29 --> ErrorException: Undefined variable $dd
+[Method: GET, Route: Exams/1]
+in APPPATH\Controllers\quizcontroller.php on line 28.
+ 1 APPPATH\Controllers\quizcontroller.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dd', 'C:\\xampp\\htdocs\\lib\\app\\Controllers\\quizcontroller.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-26 20:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-26 20:54:36 --> ErrorException: Undefined variable $dd
+[Method: GET, Route: Exams/1]
+in APPPATH\Controllers\quizcontroller.php on line 28.
+ 1 APPPATH\Controllers\quizcontroller.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dd', 'C:\\xampp\\htdocs\\lib\\app\\Controllers\\quizcontroller.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-26 20:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 20:59:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-26 21:06:09 --> ErrorException: Undefined property: stdClass::$time_limit
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 1176.
+ 1 APPPATH\Views\quiz\Exam.php(1176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$time_limit', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 1176)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(42): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-26 21:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-26 21:06:14 --> ErrorException: Undefined property: stdClass::$time_limit
+[Method: GET, Route: Exams/1]
+in APPPATH\Views\quiz\Exam.php on line 1176.
+ 1 APPPATH\Views\quiz\Exam.php(1176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$time_limit', 'C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php', 1176)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\quiz\\Exam.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('quiz/Exam', [], true)
+ 5 APPPATH\Controllers\quizcontroller.php(42): view('quiz/Exam', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\quizcontroller->view_quiz('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\quizcontroller))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-26 21:06:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-26 21:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

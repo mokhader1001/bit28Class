@@ -1,0 +1,1217 @@
+DEBUG - 2025-06-15 08:15:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 201.
+ 1 APPPATH\Views\login_logs.php(201): stripos(null, 'mobile')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 204.
+ 1 APPPATH\Views\login_logs.php(204): stripos(null, 'tablet')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 216.
+ 1 APPPATH\Views\login_logs.php(216): stripos(null, 'mac')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 216.
+ 1 APPPATH\Views\login_logs.php(216): stripos(null, 'ios')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 219.
+ 1 APPPATH\Views\login_logs.php(219): stripos(null, 'linux')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 222.
+ 1 APPPATH\Views\login_logs.php(222): stripos(null, 'android')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 201.
+ 1 APPPATH\Views\login_logs.php(201): stripos(null, 'mobile')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 204.
+ 1 APPPATH\Views\login_logs.php(204): stripos(null, 'tablet')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 216.
+ 1 APPPATH\Views\login_logs.php(216): stripos(null, 'mac')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 216.
+ 1 APPPATH\Views\login_logs.php(216): stripos(null, 'ios')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 219.
+ 1 APPPATH\Views\login_logs.php(219): stripos(null, 'linux')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 222.
+ 1 APPPATH\Views\login_logs.php(222): stripos(null, 'android')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 201.
+ 1 APPPATH\Views\login_logs.php(201): stripos(null, 'mobile')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 204.
+ 1 APPPATH\Views\login_logs.php(204): stripos(null, 'tablet')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 216.
+ 1 APPPATH\Views\login_logs.php(216): stripos(null, 'mac')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 216.
+ 1 APPPATH\Views\login_logs.php(216): stripos(null, 'ios')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 219.
+ 1 APPPATH\Views\login_logs.php(219): stripos(null, 'linux')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 222.
+ 1 APPPATH\Views\login_logs.php(222): stripos(null, 'android')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 201.
+ 1 APPPATH\Views\login_logs.php(201): stripos(null, 'mobile')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 204.
+ 1 APPPATH\Views\login_logs.php(204): stripos(null, 'tablet')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 216.
+ 1 APPPATH\Views\login_logs.php(216): stripos(null, 'mac')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 216.
+ 1 APPPATH\Views\login_logs.php(216): stripos(null, 'ios')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 219.
+ 1 APPPATH\Views\login_logs.php(219): stripos(null, 'linux')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2025-06-15 08:15:51 --> [DEPRECATED] stripos(): Passing null to parameter #1 ($haystack) of type string is deprecated in APPPATH\Views\login_logs.php on line 222.
+ 1 APPPATH\Views\login_logs.php(222): stripos(null, 'android')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\lib\\app\\Views\\login_logs.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login_logs', [], true)
+ 5 APPPATH\Controllers\Home.php(36): view('login_logs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->loginLogs()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-15 08:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-15 08:17:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-06-15 08:17:11 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-3a568b089c2sm7195594f8f.59 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [102.218.10.4]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [102.218.10.4]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3a568b089c2sm7195594f8f.59 - gsmtp
+
+DEBUG - 2025-06-15 08:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-15 08:17:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-06-15 08:17:44 --> 220 smtp.gmail.com ESMTP ffacd0b85a97d-3a568b61071sm7189586f8f.90 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [102.218.10.4]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [102.218.10.4]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3a568b61071sm7189586f8f.90 - gsmtp
+
+DEBUG - 2025-06-15 08:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 08:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 09:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-15 10:44:47 --> mysqli_sql_exception: Unknown column 'payment.price' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\lib\app\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#4 C:\xampp\htdocs\lib\app\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->Dash()
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-15 10:44:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'payment.price' in 'field list'
+[Method: GET, Route: Dash]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 2 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 10:44:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'payment.price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 3 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 4 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 10:44:47 --> [Caused by] mysqli_sql_exception: Unknown column 'payment.price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 4 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 5 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-15 10:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-15 10:45:19 --> mysqli_sql_exception: Unknown column 'payment.price' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\lib\app\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#4 C:\xampp\htdocs\lib\app\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->Dash()
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-15 10:45:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'payment.price' in 'field list'
+[Method: GET, Route: Dash]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 2 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 10:45:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'payment.price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 3 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 4 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 10:45:19 --> [Caused by] mysqli_sql_exception: Unknown column 'payment.price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 4 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 5 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-15 10:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-15 10:45:36 --> mysqli_sql_exception: Unknown column 'payment.price' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT \r\n      ...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \r\n      ...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \r\n      ...')
+#3 C:\xampp\htdocs\lib\app\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT \r\n      ...', Array)
+#4 C:\xampp\htdocs\lib\app\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+#5 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->Dash()
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-15 10:45:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'payment.price' in 'field list'
+[Method: GET, Route: Dash]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 2 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 10:45:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'payment.price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 3 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 4 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 10:45:36 --> [Caused by] mysqli_sql_exception: Unknown column 'payment.price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = \'0001101011\'
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC')
+ 4 APPPATH\Models\HomeModel.php(333): CodeIgniter\Database\BaseConnection->query('SELECT 
+                tbl_books.title,
+                authors.Name,
+                borrow.borrow_date,
+                borrow.return_date,
+                returend_books.retuned_date,
+                returend_books.status,
+
+                charge.price AS total_charge,
+                IFNULL(SUM(payment.price), 0) AS total_paid,
+                (charge.price - IFNULL(SUM(payment.price), 0)) AS balance_due,
+                charge.desriptions,
+                charge.charge_date
+            FROM borrow
+            INNER JOIN tbl_books ON tbl_books.book_id = borrow.book_id
+            INNER JOIN authors ON authors.author_id = tbl_books.author_id
+            INNER JOIN returend_books ON returend_books.boorow_id = borrow.b_id
+            LEFT JOIN charge ON charge.boorow_id = borrow.b_id
+            LEFT JOIN payment ON payment.charge_id = charge.charge_id
+            WHERE borrow.lib_user_id = ?
+            GROUP BY charge.charge_id
+            HAVING balance_due > 0
+            ORDER BY returend_books.retuned_date DESC', [...])
+ 5 APPPATH\Controllers\Home.php(54): App\Models\HomeModel->get_unpaid_charges_by_user('0001101011')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Dash()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-15 10:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 10:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:10:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 11:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:06:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 12:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-15 13:37:44 --> mysqli_sql_exception: Unknown column 'amount' in 'field list' in C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\lib\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\lib\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\lib\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\lib\app\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\lib\app\Controllers\Home.php(86): App\Models\HomeModel->store('payment', Array)
+#6 C:\xampp\htdocs\lib\system\CodeIgniter.php(933): App\Controllers\Home->makepayment()
+#7 C:\xampp\htdocs\lib\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\lib\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\lib\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\lib\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\lib\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-06-15 13:37:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'amount' in 'field list'
+[Method: POST, Route: makepayment]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `payment` (`user_id`, `charge_id`, `amount`, `payment_method`, `payment_date`, `status`) VALUES (:user_id:, :charge_id:, :amount:, :payment_method:, :payment_date:, :status:)', [...], false)
+ 2 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(86): App\Models\HomeModel->store('payment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->makepayment()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 13:37:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `payment` (`user_id`, `charge_id`, `amount`, `payment_method`, `payment_date`, `status`) VALUES (\'0001101011\', \'20\', 2, \'waafi\', \'2025-06-15 13:37:44\', \'paid\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `payment` (`user_id`, `charge_id`, `amount`, `payment_method`, `payment_date`, `status`) VALUES (\'0001101011\', \'20\', 2, \'waafi\', \'2025-06-15 13:37:44\', \'paid\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `payment` (`user_id`, `charge_id`, `amount`, `payment_method`, `payment_date`, `status`) VALUES (:user_id:, :charge_id:, :amount:, :payment_method:, :payment_date:, :status:)', [...], false)
+ 4 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Home.php(86): App\Models\HomeModel->store('payment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->makepayment()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-15 13:37:44 --> [Caused by] mysqli_sql_exception: Unknown column 'amount' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `payment` (`user_id`, `charge_id`, `amount`, `payment_method`, `payment_date`, `status`) VALUES (\'0001101011\', \'20\', 2, \'waafi\', \'2025-06-15 13:37:44\', \'paid\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `payment` (`user_id`, `charge_id`, `amount`, `payment_method`, `payment_date`, `status`) VALUES (\'0001101011\', \'20\', 2, \'waafi\', \'2025-06-15 13:37:44\', \'paid\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `payment` (`user_id`, `charge_id`, `amount`, `payment_method`, `payment_date`, `status`) VALUES (\'0001101011\', \'20\', 2, \'waafi\', \'2025-06-15 13:37:44\', \'paid\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `payment` (`user_id`, `charge_id`, `amount`, `payment_method`, `payment_date`, `status`) VALUES (:user_id:, :charge_id:, :amount:, :payment_method:, :payment_date:, :status:)', [...], false)
+ 5 APPPATH\Models\HomeModel.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Home.php(86): App\Models\HomeModel->store('payment', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->makepayment()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-06-15 13:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-15 13:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
